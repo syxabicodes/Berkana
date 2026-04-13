@@ -101,7 +101,6 @@ export default function Stats() {
           </span>
           <h2
             className="text-4xl md:text-5xl font-light leading-tight text-cream"
-            style={{ fontFamily: "var(--font-serif)" }}
           >
             The Scale of Our{" "}
             <span className="gradient-text font-normal">Ambition</span>

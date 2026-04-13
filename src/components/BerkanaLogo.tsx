@@ -1,10 +1,10 @@
 /**
- * Berkana Rune Logo Mark – SVG inline component.
- * Geometric interlocking-diamond rune inspired by the brand mark.
+ * Berkana Logo Mark – the real geometric rune symbol extracted from brand assets.
+ * This is the rune/interlocking diamond mark only (no wordmark).
  */
 export default function BerkanaLogo({
   className = "w-10 h-auto",
-  color = "currentColor",
+  color = "#E4BD86",
 }: {
   className?: string;
   color?: string;
@@ -12,36 +12,15 @@ export default function BerkanaLogo({
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100 150"
+      viewBox="70 -1 50 82"
       fill="none"
-      stroke={color}
-      strokeWidth="5.5"
-      strokeLinecap="square"
-      strokeLinejoin="miter"
       className={className}
       aria-label="Berkana logo"
     >
-      {/* Small top diamond */}
-      <path d="M50 4 L58 13 L50 22 L42 13 Z" />
-
-      {/* X-crossing lines from top diamond */}
-      <line x1="42" y1="13" x2="27" y2="48" />
-      <line x1="58" y1="13" x2="73" y2="48" />
-
-      {/* Upper diamond – lower edges */}
-      <path d="M27 48 L50 82 L73 48" />
-
-      {/* Lower diamond – full outline */}
-      <line x1="50" y1="62" x2="73" y2="96" />
-      <line x1="73" y1="96" x2="50" y2="130" />
-      <line x1="50" y1="130" x2="27" y2="96" />
-      <line x1="27" y1="96" x2="50" y2="62" />
-
-      {/* Inner diamond in lower section */}
-      <path d="M50 78 L61 90 L50 102 L39 90 Z" />
-
-      {/* Innermost tiny diamond */}
-      <path d="M50 86 L54 90 L50 94 L46 90 Z" />
+      <path
+        d="M94.2894 -0.00537109L102.004 8.07637L95.527 14.4769L111.58 29.699L102.328 39.6378L118.994 56.3358L95.2667 80.0017L81.1763 65.8487L95.4873 51.1233L101.82 57.6083L103.364 55.8323L103.404 55.7185L94.9478 47.4126L78.9667 63.1674L71.2088 56.0651V55.9875L86.4936 40.7344L77.3086 30.5404L93.2053 14.5425L86.6505 7.67979L94.2153 -0.00537109H94.2894ZM94.4049 15.6908L79.5458 30.6163L87.6122 39.6119L93.4397 33.7821L90.6595 30.9249L94.5238 26.7504L98.7673 30.7715L73.5253 55.9495L78.9563 60.9258L94.9478 45.1003L105.639 55.6409L102.015 59.9706L95.489 53.4407L83.4118 65.8452L95.3236 77.7618L116.682 56.3358L100.086 39.6429L109.343 29.8455L94.4049 15.6926V15.6908ZM95.0995 61.2414L99.2275 65.5262L95.0995 69.5025L91.1283 65.3055L95.0995 61.2414ZM95.0995 63.5571L93.3673 65.3607L95.1753 67.185L96.9075 65.459L95.0995 63.5571ZM94.5704 29.0403V29.0386L92.9054 30.9163L94.6376 32.663L96.4456 30.7835C95.9217 30.3663 95.315 29.4558 94.7962 29.1093C94.7203 29.0593 94.6738 29.0092 94.5704 29.0403ZM94.2504 2.313L88.9687 7.74531L94.3946 13.3493L99.7687 8.0643L94.2504 2.313Z"
+        fill={color}
+      />
     </svg>
   );
 }

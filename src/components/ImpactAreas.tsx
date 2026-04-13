@@ -102,7 +102,6 @@ export default function ImpactAreas() {
           </span>
           <h2
             className="text-4xl md:text-5xl font-light mb-6 leading-tight text-cream"
-            style={{ fontFamily: "var(--font-serif)" }}
           >
             Five Sectors.{" "}
             <span className="gradient-text font-normal">Infinite Impact.</span>

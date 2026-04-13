@@ -24,7 +24,6 @@ export default function Contact() {
             </span>
             <h2
               className="text-4xl md:text-5xl font-light mb-6 leading-tight text-cream"
-              style={{ fontFamily: "var(--font-serif)" }}
             >
               Your Invitation{" "}
               <span className="gradient-text font-normal">Awaits</span>

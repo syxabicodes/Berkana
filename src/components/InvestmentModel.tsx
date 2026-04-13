@@ -54,7 +54,6 @@ export default function InvestmentModel() {
           </span>
           <h2
             className="text-4xl md:text-5xl font-light mb-6 leading-tight text-cream"
-            style={{ fontFamily: "var(--font-serif)" }}
           >
             A Model Built for{" "}
             <span className="gradient-text font-normal">Collective Power</span>
