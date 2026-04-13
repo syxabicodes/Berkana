@@ -49,14 +49,17 @@ export default function InvestmentModel() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center mb-20"
         >
-          <span className="text-sm font-medium tracking-widest uppercase text-brand-400 mb-4 block">
+          <span className="text-sm font-medium tracking-widest uppercase text-gold-400 mb-4 block">
             How It Works
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+          <h2
+            className="text-4xl md:text-5xl font-light mb-6 leading-tight text-cream"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
             A Model Built for{" "}
-            <span className="gradient-text">Collective Power</span>
+            <span className="gradient-text font-normal">Collective Power</span>
           </h2>
-          <p className="text-lg text-slate-400 leading-relaxed">
+          <p className="text-lg text-steel-400 leading-relaxed">
             Our strategic framework transforms individual capital into
             collective impact through a structured, transparent process.
           </p>
@@ -65,7 +68,7 @@ export default function InvestmentModel() {
         {/* Steps Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-brand-500/50 via-gold-500/50 to-transparent hidden md:block" />
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-gold-400/40 via-steel-400/30 to-transparent hidden md:block" />
 
           <div className="space-y-16 md:space-y-24">
             {steps.map((step, i) => (
@@ -81,26 +84,31 @@ export default function InvestmentModel() {
                 {/* Step content */}
                 <div
                   className={`flex-1 ${
-                    i % 2 === 0 ? "md:text-right md:pr-16" : "md:text-left md:pl-16"
+                    i % 2 === 0
+                      ? "md:text-right md:pr-16"
+                      : "md:text-left md:pl-16"
                   }`}
                 >
-                  <span className="text-6xl md:text-7xl font-bold text-brand-500/15 leading-none">
+                  <span
+                    className="text-6xl md:text-7xl font-bold text-gold-400/10 leading-none"
+                    style={{ fontFamily: "var(--font-serif)" }}
+                  >
                     {step.number}
                   </span>
-                  <h3 className="text-2xl font-bold text-white mt-2 mb-3">
+                  <h3 className="text-2xl font-bold text-cream mt-2 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-slate-400 leading-relaxed mb-4">
+                  <p className="text-steel-400 leading-relaxed mb-4">
                     {step.description}
                   </p>
-                  <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium bg-brand-500/10 text-brand-300 border border-brand-500/20">
+                  <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium bg-gold-400/10 text-gold-400 border border-gold-400/20">
                     {step.detail}
                   </span>
                 </div>
 
                 {/* Center dot */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-500 shadow-lg shadow-brand-500/50 z-10">
-                  <div className="absolute inset-0 rounded-full bg-brand-400 animate-ping opacity-25" />
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-gold-400 shadow-lg shadow-gold-400/40 z-10">
+                  <div className="absolute inset-0 rounded-full bg-gold-300 animate-ping opacity-20" />
                 </div>
 
                 {/* Spacer for the other side */}
@@ -119,16 +127,16 @@ export default function InvestmentModel() {
         >
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 glass rounded-2xl p-8">
             <div className="text-left">
-              <p className="text-white font-semibold text-lg">
+              <p className="text-cream font-semibold text-lg">
                 Ready to join the consortium?
               </p>
-              <p className="text-slate-400 text-sm">
+              <p className="text-steel-400 text-sm">
                 Membership is by invitation only. Begin the conversation.
               </p>
             </div>
             <a
               href="#contact"
-              className="shrink-0 px-6 py-3 rounded-full bg-gradient-to-r from-brand-500 to-gold-500 text-white font-medium hover:shadow-lg hover:shadow-brand-500/25 transition-all"
+              className="shrink-0 px-6 py-3 rounded-full bg-gradient-to-r from-gold-400 to-gold-600 text-navy-800 font-medium hover:shadow-lg hover:shadow-gold-400/20 transition-all"
             >
               Request Invitation
             </a>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter">
+  <!-- Berkana Rune Logo Mark - Geometric interlocking diamonds -->
+
+  <!-- Small top diamond -->
+  <path d="M50 4 L58 13 L50 22 L42 13 Z"/>
+
+  <!-- X-crossing lines from top diamond -->
+  <!-- Left crossing: from top-right of small diamond to upper-left area -->
+  <line x1="42" y1="13" x2="27" y2="48"/>
+  <!-- Right crossing: from top-left of small diamond to upper-right area -->
+  <line x1="58" y1="13" x2="73" y2="48"/>
+
+  <!-- Upper diamond - bottom half -->
+  <path d="M27 48 L50 82 L73 48"/>
+
+  <!-- Lower diamond - full shape with interlock gaps -->
+  <!-- Top-right edge (goes OVER upper diamond's bottom-right) -->
+  <line x1="50" y1="62" x2="73" y2="96"/>
+  <!-- Bottom-right edge -->
+  <line x1="73" y1="96" x2="50" y2="130"/>
+  <!-- Bottom-left edge -->
+  <line x1="50" y1="130" x2="27" y2="96"/>
+  <!-- Top-left edge (goes OVER upper diamond's bottom-left) -->
+  <line x1="27" y1="96" x2="50" y2="62"/>
+
+  <!-- Inner squared spiral in lower diamond -->
+  <path d="M50 78 L61 90 L50 102 L39 90 Z"/>
+  <!-- Inner tiny diamond -->
+  <path d="M50 86 L54 90 L50 94 L46 90 Z"/>
+
+  <!-- Interlock detail - break upper diamond's bottom edges where lower crosses over -->
+  <!-- This is achieved by the layering - the lower diamond's edges visually cross over -->
+</svg>

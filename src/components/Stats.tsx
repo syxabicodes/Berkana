@@ -1,6 +1,12 @@
 "use client";
 
-import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import {
+  motion,
+  useInView,
+  useMotionValue,
+  useTransform,
+  animate,
+} from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
 function AnimatedCounter({
@@ -22,10 +28,7 @@ function AnimatedCounter({
 
   useEffect(() => {
     if (inView) {
-      const controls = animate(count, target, {
-        duration,
-        ease: "easeOut",
-      });
+      const controls = animate(count, target, { duration, ease: "easeOut" });
       return controls.stop;
     }
   }, [inView, count, target, duration]);
@@ -96,8 +99,12 @@ export default function Stats() {
           <span className="text-sm font-medium tracking-widest uppercase text-gold-400 mb-4 block">
             By The Numbers
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            The Scale of Our <span className="gradient-text">Ambition</span>
+          <h2
+            className="text-4xl md:text-5xl font-light leading-tight text-cream"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            The Scale of Our{" "}
+            <span className="gradient-text font-normal">Ambition</span>
           </h2>
         </motion.div>
 
@@ -110,8 +117,11 @@ export default function Stats() {
               transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
               className="text-center group"
             >
-              <div className="glass rounded-2xl p-8 hover:border-brand-500/30 transition-all duration-300 h-full">
-                <div className="text-4xl md:text-5xl lg:text-6xl font-bold gradient-text mb-3">
+              <div className="glass rounded-2xl p-8 hover:border-gold-400/20 transition-all duration-300 h-full">
+                <div
+                  className="text-4xl md:text-5xl lg:text-6xl font-light gradient-text mb-3"
+                  style={{ fontFamily: "var(--font-serif)" }}
+                >
                   <AnimatedCounter
                     target={stat.value}
                     prefix={stat.prefix}
@@ -119,10 +129,10 @@ export default function Stats() {
                     inView={isInView}
                   />
                 </div>
-                <p className="text-white font-semibold text-lg mb-1">
+                <p className="text-cream font-semibold text-lg mb-1">
                   {stat.label}
                 </p>
-                <p className="text-slate-500 text-sm">{stat.sublabel}</p>
+                <p className="text-steel-500 text-sm">{stat.sublabel}</p>
               </div>
             </motion.div>
           ))}

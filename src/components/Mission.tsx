@@ -52,13 +52,16 @@ export default function Mission() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center mb-20"
         >
-          <span className="text-sm font-medium tracking-widest uppercase text-brand-400 mb-4 block">
+          <span className="text-sm font-medium tracking-widest uppercase text-gold-400 mb-4 block">
             Our Mission
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Closing the <span className="gradient-text">$30 Trillion</span> Gap
+          <h2
+            className="text-4xl md:text-5xl font-light mb-6 leading-tight text-cream"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            Closing the <span className="gradient-text font-normal">$30 Trillion</span> Gap
           </h2>
-          <p className="text-lg text-slate-400 leading-relaxed">
+          <p className="text-lg text-steel-400 leading-relaxed">
             Women control a growing share of global wealth, yet remain
             systematically excluded from the investment structures that shape
             our world. Berkana Capital exists to bridge this divide — not with
@@ -76,14 +79,14 @@ export default function Mission() {
               transition={{ duration: 0.8, delay: 0.2 + i * 0.15 }}
               className="gradient-border group"
             >
-              <div className="relative bg-slate-900/80 rounded-2xl p-8 h-full hover:bg-slate-900/90 transition-colors">
-                <div className="w-14 h-14 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 mb-6 group-hover:bg-brand-500/20 transition-colors">
+              <div className="relative bg-navy-800/80 rounded-2xl p-8 h-full hover:bg-navy-700/50 transition-colors">
+                <div className="w-14 h-14 rounded-xl bg-gold-400/10 flex items-center justify-center text-gold-400 mb-6 group-hover:bg-gold-400/15 transition-colors">
                   {pillar.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-white">
+                <h3 className="text-xl font-semibold mb-3 text-cream">
                   {pillar.title}
                 </h3>
-                <p className="text-slate-400 leading-relaxed">
+                <p className="text-steel-400 leading-relaxed">
                   {pillar.description}
                 </p>
               </div>
@@ -98,14 +101,22 @@ export default function Mission() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-20 max-w-3xl mx-auto text-center"
         >
-          <div className="text-5xl text-brand-500/30 mb-4">&ldquo;</div>
-          <p className="text-xl md:text-2xl text-slate-300 italic leading-relaxed">
+          <div
+            className="text-5xl text-gold-400/30 mb-4"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            &ldquo;
+          </div>
+          <p
+            className="text-xl md:text-2xl text-cream/80 italic leading-relaxed"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
             100 ultra-high-net-worth leaders, each allocating $1M annually into
             returns-focused, impact-aligned ventures, can drive returns, shape
             the world, and cement legacies.
           </p>
-          <div className="mt-6 h-px w-16 mx-auto bg-gradient-to-r from-brand-500 to-gold-500" />
-          <p className="mt-4 text-sm text-slate-500 uppercase tracking-widest">
+          <div className="mt-6 h-px w-16 mx-auto bg-gradient-to-r from-gold-400 to-steel-400" />
+          <p className="mt-4 text-sm text-steel-500 uppercase tracking-widest">
             The Berkana Thesis
           </p>
         </motion.blockquote>
